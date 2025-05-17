@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  font-family: 'Baloo 2', cursive, Arial, sans-serif;
+  background: #f4f4f4;
+  color: #102043;
+}
+
+/* Header */
+header {
+  background: #102043;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 64px;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color .2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.logo-text:hover {
+  color: #ffb84c;
+}
+
+.logo-img {
+  width: 10vh;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0 4px;
+  transition: color 0.2s;
+}
+
+header nav a:hover {
+  color: #ffb84c;
+}
+
+header .login {
+  font-size: 1rem;
+  padding: 5px 10px;
+  font-family: 'baloo 2';
+  cursor: pointer;
+  color: #fff;
+  background-color: #ffb84c;
+  border-radius: 50px;
+}
+
+header .login:hover {
+  color: #102043;
+}
+/* Hero Section */
+.hero {
+  background: #102043;
+  color: #fff;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 64px 20px 56px 20px;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0 0 18px 0;
+  font-family: 'Baloo 2', cursive;
+}
+
+.hero-sub {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+  color: #e0e0e0;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #ffb84c;
+  color: #102043;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 36px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition:  0.2s, color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #ffb84c;
+  color: #fff;
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 48px 0 48px 0;
+}
+
+.features-title-btn {
+  display: inline-block;
+  background: #102043;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 36px;
+  margin-bottom: 32px;
+  text-decoration: none;
+  border: none;
+  cursor: default;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.feature-box {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(16,32,67,0.10);
+  border-color: #102043;
+  border-style: solid;
+  padding: 20px 20px;
+  width: 220px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+.feature-box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(16,32,67,0.16);
+}
+
+.feature-box h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  color: #102043;
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-box p {
+  margin: 0;
+  color: #333;
+  font-size: 0.98rem;
+}
+
+/* Pricing Section */
+.pricing {
+  background: #102043;
+  padding: 20px 0 50px 0;
+  text-align: center;
+}
+
+.pricing-title {
+  color: #ffb84c;
+  font-size: 1.5rem;
+  font-family: 'Baloo 2', cursive;
+  letter-spacing: 1px;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.pricing-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16,32,67,0.10);
+  border-color: #ffb84c;
+  border-style: solid;
+  padding: 32px 24px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pricing-box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(16,32,67,0.16);
+}
+
+.pricing-box h3 {
+  margin-bottom: 16px;
+  color: #102043;
+  font-size: 1.2rem;
+  font-family: 'Baloo 2', cursive;
+}
+
+.pricing-box p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.pricing-box .price {
+  margin: 18px 0 10px 0;
+  font-size: 1.1rem;
+  color: #ffb84c;
+  font-weight: bold;
+}
+
+.pricing-btn {
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 100%;
+  background: #ffb84c;
+  color: #102043;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  cursor: pointer;
+  transition:  0.2s, color 0.2s;
+}
+
+.pricing-btn:hover {
+  background: #ffb84c;
+  color: #fff;
+}
+
+.pricing-btn.free {
+  background: #fff;
+  color: #ffb84c;
+  border: 2px solid #ffb84c;
+  margin-top: 30px;
+}
+
+.pricing-btn.free:hover {
+  background: #ffb84c;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  color: #102043;
+  text-align: center;
+  padding: 24px 0 12px 0;
+  font-size: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.footer-social a {
+  color: #102043;
+  margin: 0 6px;
+  font-size: 1.4em;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: #ffb84c;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .feature-grid, .pricing-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 0;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Baloo 2', cursive, Arial, sans-serif;
+    background: #f4f4f4 url(logo/2.png);
+    background-size: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: #102043;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(16, 32, 67, 0.18);
+    padding: 10px 40px 36px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+}
+
+.login-logo {
+    width: 20vh;
+}
+
+.login-card form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+    background: transparent;
+    color: white;
+    font-size: 1.1rem;
+    outline: none;
+    margin-bottom: 0;
+    transition: border 0.2s;
+}
+
+.login-card input[type="text"]:focus,
+.login-card input[type="password"]:focus {
+    border-color: #ffb84c;
+}
+
+.login-options {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.login-options label {
+    display: flex;
+    gap: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-options input[type="checkbox"] {
+    accent-color: #ffb84c;
+}
+
+.forgot-link {
+    display: flex;
+    justify-self: right;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.85;
+    transition: color 0.2s;
+}
+
+.forgot-link:hover {
+    color: #ffb84c;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px 0;
+    background: #fff;
+    color: #102043;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s, color 0.2s;
+}
+
+.login-btn:hover {
+    background: #ffb84c;
+    color: #102043;
+}
