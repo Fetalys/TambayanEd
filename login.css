@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    font-family: 'Baloo 2', cursive, Arial, sans-serif;
+    font-family: 'Baloo 2', Arial, sans-serif;
     background: #f4f4f4 url(logo/2.png);
     background-size: 10%;
     display: flex;
