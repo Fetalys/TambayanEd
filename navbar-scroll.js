@@ -15,15 +15,19 @@ const scrollLinks = document.querySelectorAll('header nav a, .hero a');
 
 scrollLinks.forEach(link => {
   link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
 
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - header.offsetHeight,
-        behavior: 'smooth'
-      });
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - header.offsetHeight,
+          behavior: 'smooth'
+        });
+      }
     }
+    // If not a hash link, let the browser handle it (e.g., login.html)
   });
 });
